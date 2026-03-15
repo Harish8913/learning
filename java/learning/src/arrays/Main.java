@@ -1,5 +1,4 @@
 package arrays;
-
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -19,13 +18,22 @@ public class Main {
         }
 
         Arrays.sort(fruits);
-        Arrays.fill(fruits, "Tempered");
 
         for (String fruit : fruits) {
             System.out.println(fruit);
         }
 
         scanner.close();
+    }
+}
+
+class doSomething {
+    public static void main(String[] args){
+        String name = "Harish";
+        System.out.println(name);
+
+        int myAge = 12;
+        System.out.println(myAge);
     }
 }
 
