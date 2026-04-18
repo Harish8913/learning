@@ -3,28 +3,28 @@ import java.awt.event.*;
 
 public class Swing {
     public static void main(String[] args) {
-        JFrame f = new JFrame("Name App");
+        JFrame f = new JFrame("MY APP");
+        JButton b = new JButton("Click");
+        JTextField t = new JTextField();
+        JLabel l = new JLabel("NAME: ");
 
-        JLabel l1 = new JLabel("Enter Name:");
-        JTextField t1 = new JTextField();
-        JButton b = new JButton("Submit");
+        b.setBounds(50, 100, 100, 30);
+        l.setBounds(50, 100, 30, 30);
+        t.setBounds(50, 50, 100, 40);
 
-        l1.setBounds(50, 50, 100, 30);
-        t1.setBounds(150, 50, 150, 30); 
-        b.setBounds(100, 100, 100, 30);
-
-        f.add(l1);
-        f.add(t1);
+        f.add(l);
+        f.add(t);
         f.add(b);
 
         b.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                String name = t1.getText();
+            public void actionPerformed(ActionEvent e){
+                String name = t.getText();
                 JOptionPane.showMessageDialog(f, "Hello " + name);
             }
         });
 
-        f.setSize(400, 300);
+
+        f.setSize(300, 300);
         f.setLayout(null);
         f.setVisible(true);
     }
