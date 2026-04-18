@@ -10,7 +10,7 @@ public class Swing {
         JButton b = new JButton("Submit");
 
         l1.setBounds(50, 50, 100, 30);
-        t1.setBounds(150, 50, 150, 30);
+        t1.setBounds(150, 50, 150, 30); 
         b.setBounds(100, 100, 100, 30);
 
         f.add(l1);
